@@ -1,0 +1,20 @@
+config:
+  database:
+    host: localhost
+    port: 26257
+    username: root
+    name: db_ami_server
+    ssl: disable
+    driver: cockroachdb
+  app:
+    host: 0.0.0.0
+    name : ami-server
+    framework: flask
+    port: 6969
+    worker: 2
+    environment: production
+    library: jwt
+  redis:
+    host: 127.0.0.1
+    password: pass
+    port: 6379
