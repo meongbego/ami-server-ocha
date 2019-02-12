@@ -1,0 +1,129 @@
+database:
+  tables :
+    tb_languange:
+      id_languange:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_languange:
+        type: varchar
+        notNull: True
+    tb_platform:
+      id_platform:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_platform:
+        type: varchar
+        notNull: True
+      id_languange:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_languange
+          field: id_languange
+          on_delete: cascade
+          on_update: cascade
+    tb_serial:
+      id_serial:
+        type: serial
+        notNull: True
+        primaryKey: True
+      code_serial:
+        type: varchar
+      status:
+        type: int
+        notNull: True
+    tb_database:
+      id_database:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_database:
+        type: varchar
+        notNull: True
+    tb_server:
+      id_server:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_server:
+        type: varchar
+        notNull: True
+      id_platform:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_platform
+          field: id_platform
+          on_delete: cascade
+          on_update: cascade
+      id_serial:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_serial
+          field: id_serial
+          on_delete: cascade
+          on_update: cascade
+    tb_webapp:
+      id_webapp:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_webapp:
+        type: varchar
+        notNull: True
+      id_database:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_database
+          field: id_database
+          on_delete: cascade
+          on_update: cascade
+      id_server:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_server
+          field: id_server
+          on_delete: cascade
+          on_update: cascade
+    tb_plugin:
+      id_plugin:
+        type: serial
+        notNull: True
+        primaryKey: True
+      nm_plugin:
+        type: varchar
+        notNull: True
+      id_languange:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_languange
+          field: id_languange
+          on_delete: cascade
+          on_update: cascade
+    tb_webapp_plugin:
+      id_webapp_plugin:
+        type: serial
+        notNull: True
+        primaryKey: True
+      id_webapp:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_webapp
+          field: id_webapp
+          on_delete: cascade
+          on_update: cascade
+      id_plugin:
+        type: int
+        notNull: True
+        foreignKey:
+          reference: tb_plugin
+          field: id_plugin
+          on_delete: cascade
+          on_update: cascade
