@@ -1,0 +1,444 @@
+endpoint:
+  languange:
+    auth: False
+    insert:
+      fields:
+        nm_languange:
+          name: NM Languange
+          desc: Name For Languange
+          type: fields
+      others:
+        method:
+          name: name search for domain
+          desc: Domain Variabel To Search
+      moduls:
+        languange:
+          action: insert
+          parameters:
+            table : tb_languange
+            fields: $fields
+    remove:
+      fields:
+        id_languange:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        languange:
+          action: remove
+          parameters:
+            table : tb_languange
+            fields: $fields
+    get:
+      fields:
+        id_languange:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        languange:
+          action: get
+          parameters:
+            table : tb_languange
+            fields: $fields
+  platform:
+    insert:
+      fields:
+        nm_platform:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_serial:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        platform:
+          action: insert
+          parameters:
+            table: tb_platform
+            fields: $fields
+    remove:
+      fields:
+        id_platform:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        platform:
+          action: remove
+          parameters:
+            table: tb_platform
+            fields: $fields
+    get:
+      fields:
+        id_platform:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        platform:
+          action: get
+          parameters:
+            table : tb_platform
+            fields: $fields
+  serial:
+    insert:
+      fields:
+        code_serial:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        status:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        serial:
+          action: insert
+          parameters:
+            table: tb_serial
+            fields: $fields
+    remove:
+      fields:
+        id_serial:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        serial:
+          action: remove
+          parameters:
+            table: tb_serial
+            fields: $fields
+    get:
+      fields:
+        id_serial:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        serial:
+          action: get
+          parameters:
+            table : tb_serial
+            fields: $fields
+  database:
+    insert:
+      fields:
+        nm_database:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        database:
+          action: insert
+          parameters:
+            table: tb_database
+            fields: $fields
+    remove:
+      fields:
+        id_database:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        database:
+          action: remove
+          parameters:
+            table: tb_database
+            fields: $fields
+    get:
+      fields:
+        id_database:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        database:
+          action: get
+          parameters:
+            table : tb_database
+            fields: $fields
+  server:
+    insert:
+      fields:
+        nm_server:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        state:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_database:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_serial:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        server:
+          action: insert
+          parameters:
+            table: tb_server
+            fields: $fields
+    remove:
+      fields:
+        id_server:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        server:
+          action: remove
+          parameters:
+            table: tb_server
+            fields: $fields
+    get:
+      fields:
+        id_server:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        server:
+          action: get
+          parameters:
+            table : tb_server
+            fields: $fields
+  webapp:
+    insert:
+      fields:
+        nm_webapp:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_database:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_server:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        webapp:
+          action: insert
+          parameters:
+            table: tb_webapp
+            fields: $fields
+    remove:
+      fields:
+        id_webapp:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        webapp:
+          action: remove
+          parameters:
+            table: tb_webapp
+            fields: $fields
+    get:
+      fields:
+        id_webapp:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        webapp:
+          action: get
+          parameters:
+            table : tb_webapp
+            fields: $fields
+  plugin:
+    insert:
+      fields:
+        nm_plugin:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_languange:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        plugin:
+          action: insert
+          parameters:
+            table: tb_plugin
+            fields: $fields
+    remove:
+      fields:
+        id_plugin:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        plugin:
+          action: remove
+          parameters:
+            table: tb_plugin
+            fields: $fields
+    get:
+      fields:
+        id_plugin:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        plugin:
+          action: get
+          parameters:
+            table : tb_plugin
+            fields: $fields
+  webapp_plugin:
+    insert:
+      fields:
+        id_webapp:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+        id_plugin:
+          name: ID Languange
+          desc: ID For Languange
+          type: fields
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        webapp_plugin:
+          action: insert
+          parameters:
+            table: tb_webapp_plugin
+            fields: $fields
+    remove:
+      fields:
+        id_webapp_plugin:
+          name: ID Languange
+          desc: ID For Languange
+          type: tags
+      others:
+        method:
+          name: ID Languange
+          desc: ID For Languange
+      moduls:
+        webapp_plugin:
+          action: remove
+          parameters:
+            table: tb_webapp_plugin
+            fields: $fields
+    get:
+      fields:
+        id_webapp_plugin:
+          name: ID search
+          desc: Domain Variabel To Search
+          type: tags
+          default:
+      others:
+        method:
+          name: methode name
+          desc: Domain Variabel To Search
+      moduls:
+        webapp_plugin:
+          action: get
+          parameters:
+            table : tb_webapp_plugin
+            fields: $fields
+
+
+
+
+
+
